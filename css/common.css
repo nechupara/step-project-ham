@@ -1,0 +1,112 @@
+.wide-container {
+    width: 100%;
+    min-width: 1200px;
+}
+
+.main-container {
+    width: 1160px;
+}
+
+.colored-txt {
+    color: #18cfab;
+}
+
+.white-txt {
+    color: #fff;
+}
+
+.tab-txt {
+    color: #717171;
+}
+
+.descr-txt {
+    color: #777777;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.capital {
+    text-transform: capitalize;
+}
+
+.main-btn {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    background: #18cfab;
+    color: #fff;
+    width: 165px;
+    height: 60px;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 -5px 0 0 #fff;
+}
+
+.alt-color-btn {
+    background: #00cbf6;
+}
+
+.simple-btn {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    background: #18cfab;
+    color: white;
+    width: 165px;
+    height: 60px;
+    cursor: pointer;
+    position: relative;
+    padding-left: 54px;
+    text-align: left;
+}
+
+.simple-btn::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url(../img/symbols/plus-sign.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 22px;
+    left: 22px;
+}
+
+.section-title {
+    font-size: 36px;
+    color: #4e4e4e;
+    height: 40px;
+    position: relative;
+    margin-bottom: 98px; /* 30px to ::after element*/
+}
+
+.section-title::before {
+    content: "";
+    display: block;
+    width: 76px;
+    height: 1px;
+    background-color: #18cfab;
+    position: absolute;
+    top: 66px;
+    left: calc((100% - 76px) / 2 - 13px);
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 76px;
+    height: 1px;
+    background-color: #18cfab;
+    position: absolute;
+    top: 70px;
+    left: calc((100% - 76px) / 2 + 13px);
+}
